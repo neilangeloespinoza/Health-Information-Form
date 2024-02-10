@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PUPHIF | Survey Form </title>
+        <link rel="stylesheet" href="contacts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('navbar').innerHTML = data);
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+        <h1 class="contact-header">get in touch</h1>
+
+        <div class="contact-info">
+            <div class="card">
+                <i class="card-icon far fa-envelope"></i>
+                <p>inquire@pup.edu.ph</p>
+            </div>
+
+            <div class="card">
+                <i class="card-icon fas fa-phone"></i>
+                <p>(+63 2) 5335-1PUP (5335-1787)</p>
+                <p>5335-1777</p>
+            </div>
+
+            <div class="card">
+                <i class="card-icon fa-solid fa-location-dot"></i>
+                <p>A. Mabini Campus, Anonas</p>
+                <p>Street, Sta. Mesa</p>
+                <p>Manila, Philippines 1016</p>
+            </div>
+        </div>
+
+        <section class="footer">
+            <div class="social">
+                <a href="https://www.facebook.com/ThePUPOfficial"><i class="fb-icon fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thepupofficial/"><i class="insta-icon fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@pupcreatv"><i class="tiktok-icon fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@PUPCreaTV"><i class="yt-icon fa-brands fa-youtube"></i></a>
+                <a href="https://x.com/ThePUPOfficial?s=20"><i class="x-icon fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <p class="copyright">
+                Espinoza-Mateo-Serrano @ 2024
+            </p>
+        </section>
+        
+    </body>
+</html>

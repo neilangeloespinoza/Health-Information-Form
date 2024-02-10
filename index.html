@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('navbar').innerHTML = data);
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar" class="navbarstyles"></div>
+    <div class="content-container">
+        <img src="/assets/bg.png" alt="main background" class="main-bg">
+        <img src="/assets/overlay.png" alt="main background" class="overlay">
+        <span class="health-information-form">health information form</span>
+        <button id="startSurveyButton" type="button" class="btn btn-primary btn-lg">start survey</button>
+    </div>
+    <script src="survey.js"></script>
+</body>
+</html>

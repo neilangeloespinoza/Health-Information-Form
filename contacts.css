@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+
+li, a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: #921612;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #ffdb38;
+}
+
+/*.navbar a:hover{
+    background-color: #771612;
+    padding: 30px 35%;
+}*/
+
+.contact-header{
+    display:flex;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 5%;
+    width:100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-size: 500%;
+    color: rgb(98, 173, 243);
+}
+
+.contact-info{
+    display:flex;
+    height: 20px;
+    margin: 0 auto;
+    width:100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 30px;
+}
+
+.card{
+    background: #2f3542;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card-icon{
+    font-size: 28px;
+    background: #ffb048;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+    background: none;
+    color: #ffb048;
+    transform: scale(1.6);
+}
+
+.card p{
+    margin-top: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+    max-height: 40px;
+    opacity: 1;
+}
+
+@media screen and (max-width:800px) {
+    .contact-info{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
+
+.footer{
+    padding: 200px 0;
+    background-color: #f0f0f0;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #4b4c4d;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a .fb-icon:hover{
+    opacity: 0.9;
+    color: #184d7e;
+    transform: scale(1.8);
+}
+
+.footer .social a .insta-icon:hover{
+    opacity: 0.9;
+    color: #DD2A7B;
+    transform: scale(1.8);
+}
+
+.footer .social a .tiktok-icon:hover{
+    opacity: 0.9;
+    color: #010101;
+    transform: scale(1.8);
+}
+
+.footer .social a .yt-icon:hover{
+    opacity: 0.9;
+    color: #FF0000;
+    transform: scale(1.8);
+}
+
+.footer .social a .x-icon:hover{
+    opacity: 0.9;
+    color: #000000;
+    transform: scale(1.8);
+}
+
+.footer .copyright{
+    margin-top: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PUPHIF | Survey Form </title>
+        <link rel="stylesheet" href="about.css">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch('navbar.html')
+                    .then(response => response.text())
+                    .then(data => document.getElementById('navbar').innerHTML = data);
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="navbar"></div>
+         <section class = "about">
+            <div class = "about-content">
+                <input id="ch" type = "checkbox">
+
+                <h1>nice to meet you.</h1>
+                <h3>polyhealth</h3>
+                <p>a health information platform and service offered by the Polytechnic University of the Philippines (PUP) to promote the wellbeing and meet the healthcare needs of its students and campus community. It serves as a centralized resource for medical care, health education, disease prevention, and access to health services for the PUP population...</p>
+                <div class="content">
+                    <p>online format allows data to be efficiently aggregated while protecting sensitive medical information. Wide participation in the online Health Information Form from PUP's large student body and faculty/staff will boost validity of results across demographics. Key findings will help PUP identify pressing campus health needs in order to improve medical clinic resources, expand health education specific to this population, tailor new wellness programming, and ultimately uphold population health.</p>
+                    <label for="ch">Show Less</label>
+                </div>
+                <label for="ch">Read More</label>
+                
+            </div>
+            
+            <div class = "about-img">
+                <img src ="/assets/aboutUspic.jpg" alt="" width="950px" height="750px">
+            </div>
+         </section>
+
+            
+            </div>
+            
+    </body>
+</html>

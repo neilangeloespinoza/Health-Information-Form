@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.scrollable-container {
+    margin-top: 10%;
+    margin-left: 22%;
+    width: 54%;
+    height: 70vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.scrollable-container header {
+    margin-top: 8.3%;
+    margin-left: 22%;
+    width: 54%;
+    background-color: #8e1616;
+    color: #eac13b;
+    text-align: center;
+    text-indent: 170px;
+}
+
+
+.form-container {
+    max-width: 100%;
+    color: #8e1616;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form {
+    padding: 35px;
+    background: #fff;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+form h2 {
+    font-size: 27px;
+    text-align: center;
+    margin: 0px 0 30px;
+    color: #8e1616;
+}
+
+form .form-group-1,
+form .form-group-2,
+form .form-group-3,
+form .form-group-4,
+form .form-group-5,
+form .form-group {
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+form .form-container1{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.medicalConditions1,
+.medicalConditions2{
+    line-height: 15px;
+    text-align: left;   
+    width: 50%; 
+    box-sizing: border-box;
+    padding: 5px 5%;
+}
+
+.medicalConditions3 {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+  }
+
+.additionalinfo2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form .form-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.medicine1,
+.medicine2{
+    line-height: 15px;
+    text-align: left;   
+    width: 30%; 
+    box-sizing: border-box;
+    padding: 10px 5%;
+}
+
+.medicine3 {
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+}
+
+form .form-container3{
+    display: inline-block;
+    justify-content: center;
+}
+
+.personalhistory1{
+    margin-bottom: 15px;
+}
+
+#s-orient option:disabled {
+    color: #999;
+}
+
+form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+form input,
+form select {
+    height: 45px;
+    padding: 10px;
+    width: 100%;
+    font-size: 12px;
+    outline: none;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #bfbfbf;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #9a9a9a;
+}
+
+form input.error,
+form select.error {
+    border-color: #f91919;
+    background: #f9f0f1;
+}
+
+.submit-btn {
+    margin-top: 30px;
+}
+
+.submit-btn input {
+    color: white;
+    border: none;
+    height: auto;
+    font-size: 16px;
+    padding: 13px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    background: #8e1616;
+    transition: 0.2s ease;
+}
+
+.submit-btn input:hover {
+    background: #eac13b;
+    color: #8e1616;
+    font-weight: bold;
+}
+
+.error-popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4444;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 999;
+}
+
+.error-popup.fade-out {
+    opacity: 0;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    font-size: 14px;
+}
+
+.submit-btn input {
+    padding: 10px 20px;
+}
+
