@@ -3,15 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scrollable Form</title>
+<title>Health Information Form</title>
 <link rel="stylesheet" href="form.css">
 <script src="form.js" defer></script> 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('navbar').innerHTML = data);
-    });
 </script>
 </style>
 </head>
@@ -31,27 +25,27 @@
 
             <div class="form-group-1 fullname">
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
             </div>
             <div class="form-group-1 studentnumber">
                 <label for="studno">Student Number</label>
-                <input type="text" id="studno" name="studno" placeholder="Enter your PUP student number">
+                <input type="text" id="studno" name="studno" placeholder="Enter your PUP student number" required>
             </div>
             <div class="form-group-2 address">
                 <label for="address">Address</label>
-                <input type="text" id="address" name="address" placeholder="Enter your address">
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
             </div>
             <div class="form-group-2 schoolyear">
                 <label for="schoolyear">School Year</label>
-                <input type="text" id="schoolyear" name="schoolyear" placeholder="e.g., 2023-2024">
+                <input type="text" id="schoolyear" name="schoolyear" placeholder="e.g., 2023-2024" required>
             </div>
             <div class="form-group-3 age">
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="100" pattern="\d+">
+                <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="100" pattern="\d+" required>
             </div>
             <div class="form-group-3 sexualorientation">
                 <label for="s-orient">Sexual Orientation</label>
-                <select id="s-orient" name="s-orient">
+                <select id="s-orient" name="s-orient" required>
                     <option value="" selected disabled>Select your Orientation </option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -59,22 +53,22 @@
             </div>
             <div class="form-group-3 civilstatus">
                 <label for="civilStatus">Civil Status</label>
-                <input type="text" id="civilStatus" name="civilStatus" placeholder="Enter your civil status">
+                <input type="text" id="civilStatus" name="civilStatus" placeholder="Enter your civil status" required>
             </div>
             <div class="form-group-3 Course">
                 <label for="course">Course</label>
-                <input type="text" id="course" name="course" placeholder="Enter your course">
+                <input type="text" id="course" name="course" placeholder="Enter your course" required>
             </div>
             <div class="form-group-3 College">
                 <label for="college">College</label>
-                <input type="text" id="college" name="college" placeholder="Enter your college">
+                <input type="text" id="college" name="college" placeholder="Enter your college" required>
             </div>
             <br><br>
             <h3>Part II. Medical History</h3><br>
-                <div class="form-group-6 medical-info">
+                <div class="form-group-6 medical-info" >
                     <label for="medinfo1">1. Do you need medical attention or has known medical illness?</label>
-                    <input type="radio" id="medinfo_yes" name="medinfo1" value="Yes">Yes</input>
-                    <input type="radio" id="medinfo_no" name="medinfo1" value="No">No</input>
+                    <input type="radio" id="medinfo_yes" name="medinfo1" value="Yes" required>Yes</input>
+                    <input type="radio" id="medinfo_no" name="medinfo1" value="No" required>No</input>
                     <br><br>
                     <label for="medinfo2">(Please check the following that apply and give more information as needed)</label>
                 </div>
@@ -100,11 +94,11 @@
                 <input type="checkbox" id="tubercolosis" name="illness" value="Tubercolosis">Tubercolosis/Primary Complex<br>
             </div>
 
-            <div class="form-group-7 medicalConditions3">
-                <input type="checkbox" id="other" name="illness" value="Other">Others<br>
-                <label for="other_medinfo"> If Others, Please Indicate:</label>
-                <input type="text" id="other_medinfo" name="other_medinfo" placeholder="Enter Additional Information">
+            <div class="form-group10 medicine3">
+                <input type="checkbox" id="othersCheckbox" name="medicine" value="Other">Others:
+                <input type="text" id="other_medinfo" name="other_medinfo2" placeholder="Enter Additional Information">
             </div>
+            
             </div>
 
             <div class="form-group-8 additionalinfo1">
@@ -114,11 +108,11 @@
                 As a Parent/Guardian, I would like to declare that my child had history of allergies to the following:
                 <br><br>
                 <label for="food">Food:</label>
-                <input type="text" id="food" name="food">
+                <input type="text" id="food" name="food" placeholder="List Foods You're Allergic To (e.g., eggs, shellfish, peanuts, milk)" required>
             </div>
             <div class="form-group-9 additionalinfo2">
                 <label for="NoKnownAllergies">No Known Allergies:</label>
-                <input type="text" id="NoKnownAllergies" name="NoKnownAllergies">
+                <input type="text" id="NoKnownAllergies" name="NoKnownAllergies" placeholder="Yes/No" required>
             </div>
 
             <div class="form-container2">
@@ -126,6 +120,7 @@
             <div class="form-group10 medicine1">
                 <input type="checkbox" id="aspirin" name="medicine" value="Aspirin">Aspirin<br>
                 <input type="checkbox" id="mefenamic" name="medicine" value="Mefenamic">Mefenamic Acid<br>
+                <input type="checkbox" id="penicillin" name="medicine" value="Penicillin">Penicillin<br>
             </div>
                 
             <div class="form-group10 medicine2">
@@ -133,9 +128,9 @@
                 <input type="checkbox" id="amoxicillin" name="medicine" value="Amoxicillin">Amoxicillin<br>
             </div>
 
-            <div class="form-group10 medicine3">
-                <input type="checkbox" id="other" name="medicine" value="Other">Others:
-                <input type="text" id="other_medinfo" name="other_medinfo2" placeholder="Enter Additional Information">
+            <<div class="form-group10 medicine3">
+                <input type="checkbox" id="otherCheckbox2" name="medicine" value="Other">Others:
+                <input type="text" id="other_medinfo2" name="other_medinfo2" placeholder="Enter Additional Information" required>
             </div>
             </div>
 
@@ -144,13 +139,13 @@
             <div class="form-container3">
                 <div class="form-group-11 personalhistory1">
                     <label for="personal1">Cigarette Smoking:</label>
-                    <input type="radio" id="personal1_yes" name="personal1" value="Yes">Yes
-                    <input type="radio" id="personal1_no" name="personal1" value="No">No
+                    <input type="radio" id="personal1_yes" name="personal1" value="Yes" required>Yes
+                    <input type="radio" id="personal1_no" name="personal1" value="No " required>No
                 </div>
                 <div class="form-group-11 personalhistory2">
                     <label for="personal2">Alcohol Drinking:</label>
-                    <input type="radio" id="personal2_yes" name="personal2" value="Yes">Yes
-                    <input type="radio" id="personal2_no" name="personal2" value="No">No
+                    <input type="radio" id="personal2_yes" name="personal2" value="Yes" required>Yes
+                    <input type="radio" id="personal2_no" name="personal2" value="No" required>No
                 </div>
             </div>
             
